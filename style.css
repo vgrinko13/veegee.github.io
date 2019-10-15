@@ -1,0 +1,80 @@
+body {
+  background-image: url("background.jpg");
+  background-size: 100%;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+.active {
+  background-color: #4CAF50;
+}
+#container {
+
+}
+#logo {
+size: 100%;
+background-color: transparent;
+display: block;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+#name {
+
+}
+#about {
+
+}
+#projects {
+
+}
+
+#contact {
+
+}
+
+.header {
+ content: "";
+ position: relative;
+ height: 100%;
+ left: 50%;
+ transform: translateX(-50%);
+ width: 100vw;
+ background: white;
+ z-index: -1;
+}
+
+main {
+
+}
+
+
+
+
+footer {
+
+}
