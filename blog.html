@@ -16,19 +16,20 @@ display: block;
 margin-left: auto;
 margin-right: auto;
 }
-    .menu {
+.menu-1 {
   list-style-type: none;
   margin: 0;
   overflow: hidden;
   background-color: #333;
 }
 
-li {
+.li-1 {
   float: left;
-  margin-left: 70px;
+  margin-left: 120px;
+  font-family: 'Open Sans Condensed', bold;
 }
 
-li a {
+.li-1 a {
   display: block;
   color: white;
   text-align: center;
@@ -42,7 +43,14 @@ li a:hover {
 }
 .active {
   background-color: #4CAF50;
-    }
+}
+
+.container-11 {
+  width: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 30px;
+}
 
     /* Remove the jumbotron's default bottom margin */
      .jumbotron {
@@ -61,38 +69,44 @@ li a:hover {
 <div class="header">
               <img src="logo.png" alt="VeeGee web development social media marketing" id="logo"> </div>
             <div>
-              <ul class="menu">w
-                <li> <a href="index.html">Home</a> </li>
-                <li>  <a href="about.html">About us</a> </li>
-                <li>   <a href="projects.html">Our Projects</a> </li>
-             <li>  <a href="contact.html">Contact us</a>
-              <li>  <a href="blog.html">Our blog</a>
+              <ul class="menu-1">
+                <li class="li-1"> <a href="index.html">Home</a> </li>
+                <li class="li-1">  <a href="about.html">About us</a> </li>
+                <li class="li-1">   <a href="projects.html">Our Projects</a> </li>
+             <li class="li-1">  <a href="contact.html">Contact us</a>
+              <li class="li-1">  <a href="blog.html">Our blog</a>
                 </div> </li>
       </ul>
 
-<div class="container">
+<div class="container-11">
   <div class="row">
     <div class="col-sm-3">
       <div class="panel panel-primary">
         <div class="panel-heading">FIND MORE ABOUT EFFECTIVE SEO</div>
-        <div class="panel-body"><img src="seo.img" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Lern how to make effective Searching Engine Optimization</div>
+        <div class="panel-body"><img src="seo.jpg" class="img-thumbnail" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Learn how to make effective Searching Engine Optimization</div>
       </div>
     </div>
     <div class="col-sm-3">
       <div class="panel panel-danger">
         <div class="panel-heading">FIND MORE ABOUT HIRING OUTSOURCE EMPLOYEE</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-body"><img src="outsource.jpg" class="img-rounded" style="width:100%" alt="Image"></div>
         <div class="panel-footer">Wanna start working with freelancers? Find five steps how to make it succesful</div>
       </div>
     </div>
     <div class="col-sm-3">
       <div class="panel panel-success">
+
         <div class="panel-heading">HOW TO MAKE LIVE CHAT ON WEB-SITE</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+
+        <div class="panel-body"><img src="livechat.png" class="img-circle" style="width:100%" alt="Image"></div>
         <div class="panel-footer">If you want to communicate with your customer online right on your web-stie read this post!</div>
       </div>
     </div>
+  </div>
+   <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">More</button>
+  <div id="demo" class="collapse">
+    Be patient. We work on it. You can subscripe and check when it is available.
   </div>
 </div><br>
 
@@ -102,11 +116,21 @@ li a:hover {
 </div><br><br>
 
 <footer class="container-fluid text-center">
-  <p>Online Store Copyright</p>
-  <form class="form-inline">Get deals:
-    <input type="email" class="form-control" size="50" placeholder="Email Address">
-    <button type="button" class="btn btn-danger">Sign Up</button>
+  <p>Subscribe to our blog</p>
+  <div class="container">
+  <h2>Subscription Form</h2>
+  <form>
+    <div class="form-group">
+      <input type="email" class="form-control" id="email" placeholder="Enter email">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox"> I agree to get commercial offers</label>
+    </div>
+     <a href="index.html" type="submit" style="text-align: center;" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-envelope"></span> Subscribe
+        </a>
   </form>
+</div>
 </footer>
 
 </body>
